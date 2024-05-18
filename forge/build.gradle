@@ -28,8 +28,8 @@ loom {
 
     forge {
         convertAccessWideners = true
-        mixinConfig "vs_addon_template.mixins.json"
-        mixinConfig "vs_addon_template-common.mixins.json"
+        mixinConfig "vs_collections.mixins.json"
+        mixinConfig "vs_collections-common.mixins.json"
         extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
     }
 }

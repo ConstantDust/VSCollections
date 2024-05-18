@@ -3,7 +3,7 @@ architectury {
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/vs_addon_template.accesswidener")
+    accessWidenerPath = file("src/main/resources/vs_collections.accesswidener")
 }
 
 dependencies {
@@ -54,7 +54,7 @@ publishing {
             println "Publishing to Github Packages"
             maven {
                 name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/ValkyrienSkies/Eureka")
+                url = uri("https://maven.pkg.github.com/ValkyrienSkies/Collections")
                 credentials {
                     username = System.getenv("GITHUB_ACTOR")
                     password = System.getenv("GITHUB_TOKEN")
